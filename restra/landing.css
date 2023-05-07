@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(PI.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    padding: 0px 70px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 2px 0px 5px grey; */
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: yellow;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.menu a:last-child {
+    background: yellow;
+    color: black;
+    border-radius: 8px;
+}
+
+.h-text {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 15px;
+    color: white;
+
+}
+
+.h-text p {
+    color: #fff;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.h-text h1 {
+    font-size: 4em;
+    line-height: 1.5em;
+}
+
+.h-text h1 span {
+    color: yellow;
+}
+
+.h-text h2 {
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+#order {
+    text-decoration: none;
+    color: white;
+    background: brown;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+#dis {
+    text-decoration: none;
+    color: white;
+    background: #262626;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+@media  (max-width: 830px) {
+    nav{
+        display:inline;
+        height:100px;
+        padding: 12px 10px;
+        
+        
+        
+
+    }
+    .logo{
+        margin-bottom:12px;
+    }
+    header{
+        
+        background-size: 100% 88vh;
+        background-color: black;
+    }
+}
+@media  (max-width: 560px){
+    nav{
+        display:inline;
+        height:120px;
+        padding: 8px 10px;
+        
+        
+        
+
+    }
+    .menu a {
+        text-decoration: none;
+        color: white;
+        padding: 8px 10px;
+    }
+}
+@media  (max-width: 442px){
+    nav{
+        display:inline;
+        /* height:120px; */
+        padding: 8px 10px;
+        
+        
+        
+
+    }
+    .menu a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 7px;
+    }
+    .logo{
+    font-weight: bold;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+}
